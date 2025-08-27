@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div>
+    <div id="home">
       <header>
         <nav>
           <Link to={"/"}>Website LOGO</Link>
