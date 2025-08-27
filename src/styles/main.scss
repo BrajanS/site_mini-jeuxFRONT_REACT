@@ -1,0 +1,21 @@
+// #region ENTRY ----------
+@use "./entry/_login.scss";
+@use "./entry/_register.scss";
+// #endregion -------------
+// #region HOME -----------
+@use "./home/_header.scss";
+@use "./home/_main.scss";
+@use "./home/_icon-credits.scss";
+@use "./home/_notFound.scss";
+// #endregion -------------
+// #region MEDIA QUERIES ----------------
+@use "./media-queries/_mediaquery1.scss";
+@use "./media-queries/_mediaquery2.scss";
+// #endregion ---------------------------
+// #region PROFILE ------------
+@use "./profile/_profile.scss";
+// #endregion -----------------
+
+// #region OTHER ----------
+@use "./other/_other.scss";
+// #endregion -------------
