@@ -1,6 +1,24 @@
 import { Link } from "react-router-dom";
 
 export default function Home() {
+  async function handlePfpClick() {
+    const obtainUsers = await fetch(
+      "https://site-mini-jeuxbackend.onrender.com/users",
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+      }
+    );
+    if (obtainUsers) {
+      const result = await obtainUsers.json();
+      console.log("result:", result);
+      return result;
+    }
+  }
+
   return (
     <div id="home">
       <header>
@@ -8,7 +26,7 @@ export default function Home() {
           <Link to={"/"}>Website LOGO</Link>
           <div>
             <Link to={"/friends"}>Friends</Link>
-            <button id="profileBtn">
+            <button id="profileBtn" onClick={() => handlePfpClick()}>
               <img src="" alt="Profile page" />
               <div id="profileMenu" className="hidden">
                 <Link to={"/profile"}>Go to profile</Link>

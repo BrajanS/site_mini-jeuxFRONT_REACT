@@ -1,3 +1,11 @@
+#home header {
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  background-color: #6ea1e4;
+  height: 125px;
+  display: flex;
+}
 #home header > nav {
   width: 100%;
   display: flex;
@@ -8,9 +16,28 @@
 #home header > nav > div {
   display: flex;
   align-items: center;
+  gap: 50px;
+}
+
+main {
+  background: linear-gradient(#5a5ce0 0%, #dddddd 55%, #7a7ba2 100%);
+  display: flex;
+  flex-grow: 1;
 }
 
 #notFound h2 {
   color: red;
   font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
